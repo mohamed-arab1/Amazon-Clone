@@ -1,5 +1,5 @@
 import { 
-        createBrowserRouter,
+        createHashRouter,
         createRoutesFromElements,
         Outlet,
         Route,
@@ -26,7 +26,7 @@ const LayOut = () => {
 
 function App() {
 
-  const router = createBrowserRouter(
+  const router = createHashRouter(
     createRoutesFromElements(
         <Route>
           <Route path='/' element={<LayOut />}>
