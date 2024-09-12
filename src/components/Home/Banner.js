@@ -38,41 +38,41 @@ const Banner = () => {
               }}> {dots} </ul>
             </div>
           ),
-          customPaging: i => (
-            <div
-              style={
-                i === dotActive 
-                ? {
-                    width: "30px",
-                    height: "30px",
-                    borderRadius: "50%",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    color: "white",
-                    background: "#131921",
-                    padding: "8px 0",
-                    cursor: "pointer",
-                    border: "1px solid #f3a847",
-                  } 
-                : {
-                    width: "30px",
-                    height: "30px",
-                    borderRadius: "50%",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    background: "#232F3E",
-                    color: "white",
-                    padding: "8px 0",
-                    cursor: "pointer",
-                    border: "1px solid white",
-                  }
-              }
-            >
-              {i + 1}
-            </div>
-          ),
+            customPaging: i => (
+              <div
+                style={
+                  i === dotActive 
+                  ? {
+                      width: "30px",
+                      height: "30px",
+                      borderRadius: "50%",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      color: "white",
+                      background: "#131921",
+                      padding: "8px 0",
+                      cursor: "pointer",
+                      border: "1px solid #f3a847",
+                    } 
+                  : {
+                      width: "30px",
+                      height: "30px",
+                      borderRadius: "50%",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      background: "#232F3E",
+                      color: "white",
+                      padding: "8px 0",
+                      cursor: "pointer",
+                      border: "1px solid white",
+                    }
+                }
+              >
+                {i + 1}
+              </div>
+            ),
           responsive:[
             {
               breakpoint: 576,
